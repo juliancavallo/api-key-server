@@ -1,0 +1,22 @@
+{
+  "name": "apikey-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cors": "^2.8.5",
+    "csv2json": "^2.0.2",
+    "express": "^4.17.1",
+    "papaparse": "^5.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node app"
+  },
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": "v14.16.0"
+  }
+}
