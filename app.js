@@ -3,12 +3,13 @@ const app = express();
 const axios = require ("axios");
 const Papa = require('papaparse');
 const cors = require('cors');
+const port = process.env.PORT || 3000;
 
 let apiKeys = {};
 getApiKeys();
 
 app.use(cors({
-    origin: ['https://juliancavallo.github.io',  'http://127.0.0.1:5501']
+    origin: ['https://juliancavallo.github.io']
 }));
  
 app.get('/', function (req, res) {
@@ -27,7 +28,7 @@ app.get('/key', function (req, res) {
         res.send({message: "No se encontró la API indicada"})
 })
  
-app.listen(3000, () => {console.log("corriendo en http://127.0.0.1:3000")})
+app.listen(port, () => {console.log(`corriendo en puerto ${port}`)})
 
 
 function getApiKeys(){
