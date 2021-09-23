@@ -6,7 +6,7 @@ const cors = require('cors');
 const port = process.env.PORT || 3000;
 
 let apiKeys = {};
-getApiKeys();
+//getApiKeys();
 
 app.use(cors());
  
