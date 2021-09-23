@@ -6,7 +6,7 @@ const cors = require('cors');
 const port = process.env.PORT || 3000;
 
 let apiKeys = {};
-//getApiKeys();
+getApiKeys();
 
 app.use(cors());
  
@@ -15,7 +15,7 @@ app.get('/', function (req, res) {
 })
 
 app.get('/key', function (req, res) {
-    //getApiKeys();
+    getApiKeys();
 
     const apiName = req.query.name;
     const obj = apiKeys.find(x => x.name == apiName);
