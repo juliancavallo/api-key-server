@@ -8,9 +8,7 @@ const port = process.env.PORT || 3000;
 let apiKeys = {};
 getApiKeys();
 
-app.use(cors({
-    origin: ['https://juliancavallo.github.io']
-}));
+app.use(cors());
  
 app.get('/', function (req, res) {
   res.send('Hello World')
