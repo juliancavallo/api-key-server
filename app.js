@@ -15,7 +15,7 @@ app.get('/', function (req, res) {
 })
 
 app.get('/key', function (req, res) {
-    getApiKeys();
+    //getApiKeys();
 
     const apiName = req.query.name;
     const obj = apiKeys.find(x => x.name == apiName);
