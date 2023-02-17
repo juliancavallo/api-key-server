@@ -2,7 +2,7 @@
   "name": "apikey-server",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "index.js",
   "dependencies": {
     "axios": "^0.21.1",
     "cors": "^2.8.5",
@@ -12,7 +12,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "node app"
+    "start": "node index"
   },
   "author": "",
   "license": "ISC",
